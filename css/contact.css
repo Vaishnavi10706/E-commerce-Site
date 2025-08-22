@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+body , html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body {
+  min-height: 100vh;
+}
+
+.animated-heading {
+  font-size: 50px;
+  margin-bottom: 30px;
+  animation: bouncein 1s ease-in;
+  animation-delay: 1s;
+}
+.contact-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff3e0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  scrollbar-width: 10px;
+  animation: slideFadeIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
+  transform: translateY(50px);
+}
+.contact-container h2 {
+  text-align: center;
+  color: #d35400;
+  margin-bottom: 10px;
+}
+
+/*.contact-form {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #fff3e0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  scrollbar-width: 10px;
+  animation: slideFadeIn 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
+  transform: translateY(50px);
+}*/
+.contact-form input , 
+.contact-form textarea, 
+.contact-form button {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: inputFadeIn 4s ease-out forwards;
+}
+.contact-form input:nth-child(1) {
+  animation-delay: 1.2s;
+}
+.intro {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: space-between;
+}
+.contact-form,
+.contact-info {
+  flex: 1 1 45%;
+}
+.contact-form h3,
+.contact-info h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+.contact-form button {
+  background-color: #d35400;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background-color: #b84300;
+}
+.contact-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+.contact-info strong {
+  color: #000;
+}
+#ContactUs {
+  color:rgb(215, 3, 3);
+  text-align: center;
+}
+@keyframes inputFadeIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes  slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(0);
+  }
+}
+
+@keyframes bouncein {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

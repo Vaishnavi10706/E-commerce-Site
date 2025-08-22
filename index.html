@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce website</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <h1>My Shop</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="page/about.html">About</a>
+      <a href="page/product.html">Products</a>
+      <a href="page/contact.html">Contact</a>
+      <a href="page/bag.html">Bag🛍️(<span class="bag-item-count">0</span>)</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Welcome to my shop</h2>
+    <p>Shop latest Fasion and Gadgets at the best prices</p>
+    <a href="page/product.html" class="btn" style="font-size: 40px;">Shop Now</a>
+  </section>
+  <hr>
+  <div class="about animate-div">
+    <h1>About</h1>
+    <p>This is one of the best E-commerce website where you will find everything likes(clothes, shoes, bags, perfumes, etc). In this website everything is budget-friendly . This e-commerce websites believes to provide quality products which make their customer happy and satisfied.</p>
+    <a href="page/about.html">For More Details</a>
+  </div><br>
+  <hr>
+  <!--<div class="product">
+    <h1>Product</h1>-->
+    <div class="itemContainer">
+        <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="banner/b1.png" class="d-block picture" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner/b2.png" class="d-block picture" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="banner/b3.png" class="d-block w-100 picture" alt="..." id="banner3">
+    </div>
+    <div class="carousel-item">
+      <img src="banner/b4.png" class="d-block picture" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon imageshift" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon imageshift" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    </div>
+<hr>
+<div class="items-container">
+</div>
+<hr>
+  <!--<h3 style="font-size: 60px;">Men</h3>
+  <div id="men">
+    <div class="item-card">
+      <img src="images/4.png" alt="">
+      <hr>
+      <p>4.4⭐| 2.2K</p>
+      <p><strong>Brand: </strong>Adidas</p>
+      <p><strong>Product: </strong>Indian Cricket Jersy</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹600 </span > <span id="Actual-Price">₹1200 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/5.png" alt="">
+      <hr>
+      <p>4.2⭐| 1.5K</p>
+      <p><strong>Brand: </strong>Roadater</p>
+      <p><strong>Product: </strong>Pure Cotton T-shirt</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹489 </span > <span id="Actual-Price">₹1399 </span> <span id="discount">(65% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/7.png" alt="">
+      <hr>
+      <p>4.2⭐| 1.2K</p>
+      <p><strong>Brand: </strong>The Indian Garage Co</p>
+      <p><strong>Product: </strong>Men Fit Regular Shorts</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹639 </span > <span id="Actual-Price">₹1599 </span> <span id="discount">(60% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+  </div>
+  <hr>
+  <h3 style="font-size: 60px;">Women</h3>
+  <div id="women">
+    <div class="item-card">
+      <img src="images/2.png" alt="">
+      <hr>
+      <p>4.3⭐| 2.4K</p>
+      <p><strong>Brand: </strong>Cukoo</p>
+      <p><strong>Product: </strong>Women Swimming Dress</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹1000 </span > <span id="Actual-Price">₹2000 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/3.png" alt="">
+      <hr>
+      <p>4.2⭐| 1.5K</p>
+      <p><strong>Brand: </strong>Nuevosdamas</p>
+      <p><strong>Product: </strong>A-line knee-length Shirt</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹495 </span > <span id="Actual-Price">₹1599 </span> <span id="discount">(69% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/9.png" alt="">
+      <hr>
+      <p>4.9⭐| 5.2K</p>
+      <p><strong>Brand: </strong>Zari Banaras</p>
+      <p><strong>Product: </strong>Banarasi Silk Saree</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹3000 </span > <span id="Actual-Price">₹5000 </span> <span id="discount">(40% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+  </div>
+  <hr>
+  <h3 style="font-size: 60px;">Shoes</h3>
+  <div id="shoes">
+    <div class="item-card">
+      <img src="images/6.png" alt="">
+      <hr>
+      <p>4.4⭐| 2.2K</p>
+      <p><strong>Brand: </strong>Nike</p>
+      <p><strong>Product: </strong>Men ReactX Shoes</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹7000 </span > <span id="Actual-Price">₹14000 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/10.png" alt="">
+      <hr>
+      <p>4.2⭐| 4.5K</p>
+      <p><strong>Brand: </strong>Bata</p>
+      <p><strong>Product: </strong>Women Black Heels</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹700 </span > <span id="Actual-Price">₹1400 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/11.png" alt="">
+      <hr>
+      <p>4.6⭐| 2.3K</p>
+      <p><strong>Brand: </strong>Bata</p>
+      <p><strong>Product: </strong>Women Brown Heels</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹639 </span > <span id="Actual-Price">₹1599 </span> <span id="discount">(60% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+  </div>
+  <hr>
+  <h3 style="font-size: 60px;">Perfume</h3>
+  <div id="perfumes">
+    <div class="item-card">
+      <img src="images/8.png" alt="">
+      <hr>
+      <p>4.2⭐| 5.1K</p>
+      <p><strong>Brand: </strong>Nivea</p>
+      <p><strong>Product: </strong>Men Fresh Deodrant </p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹142 </span > <span id="Actual-Price">₹285 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/12.png" alt="">
+      <hr>
+      <p>4.2⭐| 5.5K</p>
+      <p><strong>Brand: </strong>Bellavita</p>
+      <p><strong>Product: </strong>Women Perfume</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹600 </span > <span id="Actual-Price">₹1200 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/13.png" alt="">
+      <hr>
+      <p>4.8⭐| 2.3K</p>
+      <p><strong>Brand: </strong>Secret</p>
+      <p><strong>Product: </strong>Women Fresh Deodrant</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹450 </span > <span id="Actual-Price">₹900 </span> <span id="discount">(60% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+  </div>
+  <hr>
+  <h3 style="font-size: 60px;">Purse</h3>
+  <div id="purse">
+    <div class="item-card">
+      <img src="images/14.png" alt="">
+      <hr>
+      <p>4.2⭐| 3.1K</p>
+      <p><strong>Brand: </strong>Bagit</p>
+      <p><strong>Product: </strong>Women Brown Purse </p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹900 </span > <span id="Actual-Price">₹3000 </span> <span id="discount">(70% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/15.png" alt="">
+      <hr>
+      <p>4.2⭐| 5.5K</p>
+      <p><strong>Brand: </strong>Exotic</p>
+      <p><strong>Product: </strong>Women Cream Handbag</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹800 </span > <span id="Actual-Price">₹1600 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+    <div class="item-card">
+      <img src="images/16.png" alt="">
+      <hr>
+      <p>4.8⭐| 2.3K</p>
+      <p><strong>Brand: </strong>PatPat</p>
+      <p><strong>Product: </strong>Women Sling Bag</p>
+      <p><strong>Current-Price: </strong><span id="Current-Price">₹450 </span > <span id="Actual-Price">₹900 </span> <span id="discount">(50% OFF)</span></p>
+      <button id="addtobag">Add To Bag</button>
+    </div>
+  </div>
+  <hr>
+</div>
+    <div class="item-card">
+    <img src="images/5.png" alt="">
+    <hr>
+    <p><b>Men</b></p>
+  </div>
+  <div class="item-card">
+    <img src="images/3.png" alt="">
+    <hr>
+    <p><b>Women</b></p>
+  </div>
+  <div class="item-card">
+    <img src="images/10.png" alt="">
+    <hr>
+    <p><b>Shoes</b></p>
+  </div>
+  <div class="item-card">
+    <img src="images/15.png" alt="">
+    <hr>
+    <p><b>Purse</b></p>
+  </div>
+  <div class="item-card">
+    <img src="images/12.png" alt="">
+    <hr>
+    <p><b>Perfumes</b></p>
+  </div>
+  </div>
+    <a href="page/product.html">For More Details</a>
+  </div><br>-->
+  <div class="contact animate-div-reverse">
+    <h1>Contact Us</h1>
+    <p class="intro">
+      We would love to speak with you.Feel free to reach out using the below Details.
+    </p>
+    <a href="page/contact.html">For More Details</a>
+  </div><br>
+  <hr>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_column">
+        <h3>ONLINE SHOPPING</h3>
+
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+          <a href="#">Bag</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>ONLINE SHOPPING</h3>
+
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+          <a href="#">Bag</a>
+      </div>
+
+      <div class="footer_column">
+        <h3>ONLINE SHOPPING</h3>
+
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Products</a>
+          <a href="#">Contact</a>
+          <a href="#">Bag</a>
+      </div>
+    </div>
+    <hr>
+    <div class="copyright">
+      © 2025 www.onlinefoodshop.com. All rights reserved.
+    </div>
+  </footer>
+  <script src="data/item.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
