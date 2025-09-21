@@ -35,20 +35,6 @@ header h1 {
   display: grid;
   justify-content: center;
 }
-/*.product {
-  font-size: 25px;
-  margin: 15px;
-  padding: 10px;
-  color: black;
-  background: rgb(249, 249, 249);
-  border: 2px solid black;
-  border-radius: 52px;
-}
-.product h1 {
-  background-color: antiquewhite;
-  border: 1px solid black;
-  border-radius: 50%;
-}*/
 body {
   background:rgb(58, 88, 58);;
 }
@@ -226,46 +212,6 @@ h3 {
     padding: 5px 15px;
     cursor: pointer;
 }
-/*.bag-item-count {
-    background-color: #f16565;
-    white-space: nowrap;
-    text-align: center;
-    line-height: 18px;
-    padding: 0 6px;
-    height: 18px;
-    position: relative;
-    border-radius: 50%;
-    font-size: 12px;
-    color: #fff;
-    left: 13px;
-    top: -44px;
-    font-weight: 700;
-    cursor: pointer;
-}
-.product a {
-  display: grid;
-  justify-content: center;
-}
-.itemContainer {
-  width: 80%;
-  margin-top: 10px;
-  margin: 40px 10%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.item-card {
-  border: 1px solid black;
-  height: 250px;
-  width: 272px;
-  padding: 5px;
-  margin-top: 15px;
-  background: #faebd7;
-}
-.item-card img {
-  height: 170px;
-  width: 260px;
-}*/
 .contact {
   font-size: 25px;
   margin: 15px;

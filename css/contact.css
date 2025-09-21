@@ -33,20 +33,6 @@ body {
   color: #d35400;
   margin-bottom: 10px;
 }
-
-/*.contact-form {
-  max-width: 900px;
-  margin: 40px auto;
-  background-color: #fff3e0;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  scrollbar-width: 10px;
-  animation: slideFadeIn 1s ease-out forwards;
-  opacity: 0;
-  animation-delay: 1s;
-  transform: translateY(50px);
-}*/
 .contact-form input , 
 .contact-form textarea, 
 .contact-form button {
